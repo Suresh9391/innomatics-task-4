@@ -1,0 +1,720 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar Section */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0a0a0a;
+    padding: 10px 30px;
+    box-shadow: 10px 5px rgba(0, 0, 0, 0.1); /* Added shadow color */
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Keep it on top */
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 40px; 
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .title-red {
+    font-size: 1.5em;
+    color: red;
+  }
+  
+  .title-blue {
+    font-size: 1.5em;
+    color: rgb(55, 0, 255);
+  }
+  
+  .nav-links {
+    list-style: none;
+    display:flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s;
+  }
+  
+  .nav-links a:hover {
+    background-color: #575757;
+  }
+  
+  .toggle-btn {
+    display: none; 
+  }
+  
+  /* Main Content */
+  .main-content {
+    margin-top: 70px;
+    padding:20px;/* Ensure content doesn't go under navbar */
+  }
+  
+  section {
+    padding: 50px 0;
+    margin: 10px;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.1); /* Added shadow color */
+  }
+  
+  /* Home Section */
+  .home-card {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('https://img.freepik.com/premium-photo/brown-v-board-education-national-historic-site_880100-6232.jpg?') 
+    no-repeat center center/cover;    
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .home-heading {
+    font-family: "Roboto";
+    font-weight: bold;
+    font-style: italic;
+    font-size: 60px;
+  }
+  
+  .head-span1 {
+    color: red;
+  }
+  
+  .head-span2 {
+    color: rgb(231, 231, 240);
+  }
+  
+  .home-para {
+    color: white;
+    font-family: "Roboto";
+    font-size: 30px;
+  }
+  
+  /* About Section */
+  .btn-employe,
+  .btn-student {
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    height: 50px;
+    width: 100px;
+  }
+  
+  .btn-employe {
+    border: 1px solid red;
+  }
+  
+  .btn-student {
+    border: 1px solid blue;
+  }
+  
+  .about-section-card {
+    background-color: #e3f2fd;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+  }
+  
+  .about-kenwin-card,
+  .about-school-card {
+    height: 60vh;
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-heading {
+    color: #283;
+  }
+  
+  /* Achievements and Employee Section */
+  .selection-achivements-card,
+  .selection-employe-card {
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f4f6; 
+    padding: 20px;
+  }
+  
+  /* Student Achievements */
+  .Student-achivements {
+    height: 70vh;
+    background-image: linear-gradient(to right, #dfe9f3, #ffffff); 
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+  }
+  
+  .students-year-card {
+    height: 55vh;
+    background-color: #ffffff; 
+    margin: 10px;
+    width: 22%; 
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  .students-year1-card{
+      height: 55vh;
+    background-color: #ffffff; 
+    margin: 10px;
+    width: 22%; 
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  .students-year2-card{
+      height: 55vh;
+    background-color: #ffffff; 
+    margin: 10px;
+    width: 22%; 
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  .students-year3-card{
+     height: 55vh;
+    background-color: #ffffff; 
+    margin: 10px;
+    width: 22%; 
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  .students-year4-card{
+    height: 55vh;
+    background-color: #ffffff; 
+    margin: 10px;
+    width: 22%; 
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  .students-year5-card{
+      height: 55vh;
+    background-color: #ffffff; 
+    margin: 10px;
+    width: 22%; 
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  .students-year6-card{
+    height: 55vh;
+    background-color: #ffffff; 
+    margin: 10px;
+    width: 22%; 
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  .students-year7-card{
+      height: 55vh;
+    background-color: #ffffff; 
+    margin: 10px;
+    width: 22%; 
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  .students-year8-card{
+    height: 55vh;
+    background-color: #ffffff; 
+    margin: 10px;
+    width: 22%; 
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .a-profile-employe {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: white;
+    background-color: #007bff; 
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .student-head {
+    color: #333; 
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .image-result {
+    height: 250px; 
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px; 
+  }
+  
+  /* Employee Section */
+  .selection-employe {
+    height: 70vh;
+    background-color: rgb(230, 240, 250); 
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+  }
+  
+  .employe-card {
+    height: 60vh;
+    background-color: #ffffff;
+    margin: 10px;
+    width: 22%;
+    padding: 10px;
+    border: 2px solid #ddd; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .employe-card4{
+      height: 60vh;
+    background-color: #ffffff;
+    margin: 10px;
+    width: 22%;
+    padding: 10px;
+    border: 2px solid #ddd; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .employe-card8{
+    height: 60vh;
+    background-color: #ffffff;
+    margin: 10px;
+    width: 22%;
+    padding: 10px;
+    border: 2px solid #ddd; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .employe-card3{
+    height: 60vh;
+    background-color: #ffffff;
+    margin: 10px;
+    width: 22%;
+    padding: 10px;
+    border: 2px solid #ddd; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .employe-card7{
+    height: 60vh;
+    background-color: #ffffff;
+    margin: 10px;
+    width: 22%;
+    padding: 10px;
+    border: 2px solid #ddd; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .profile-employe {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Services Section */
+  .selection-serivce-card {
+    height: 80vh;
+    background-color: #f5f7fa; 
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .service-card-content {
+    height: 70vh;
+    padding: 20px;
+    width: 60%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    background-color: #ffffff; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+    margin-right: 20px;
+  }
+  
+  .service-card-image {
+    height: 70vh;
+    width: 40%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    background-color: #f0f4f8; 
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .selection-heading {
+    color: #2c3e50; 
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .selection-head {
+    color: #34495e; 
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .serivce-card-content p {
+    color: #555; 
+    font-size: 16px;
+    line-height: 1.6; 
+    margin-bottom: 20px;
+  }
+  
+  .selection-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+    border-radius: 10px; 
+  }
+  
+  /* Activities Section */
+  
+  
+  
+  
+  .school-section {
+      background-color: #f4f6f8; /* Light background for contrast */
+      padding: 50px 20px; /* Padding for spacing */
+      border-radius: 10px; 
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+      margin: 20px auto; 
+      max-width: 100%; 
+      height: 100vh;
+  }
+  
+  .school-heading {
+      color: #2c3e50; 
+      text-align: center; 
+      font-size: 2em; 
+      margin-bottom: 20px; 
+  }
+  
+  .school-content {
+      display: flex; 
+      justify-content: row; 
+      
+      height: 90vh;
+      width: 100%;
+  }
+  .school-content-card{
+      height: 83vh;
+      background-color: white;
+      border: 1px solid black;
+      box-shadow: 2px 2px;
+      margin: 10px;
+      border-radius: 10px;
+      width: 100%;
+  }
+  
+  .school-description{
+      
+          width: fit-content; /* Almost half width for each section */
+          background-color: white; /* White background for contrast */
+          padding: 20px; /* Padding inside the boxes */
+          border-radius: 10px; /* Rounded corners */
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .school-highlights {
+      width: fit-content; /* Almost half width for each section */
+      background-color: white; /* White background for contrast */
+      padding: 20px; /* Padding inside the boxes */
+      border-radius: 10px; /* Rounded corners */
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .school-image-card{
+      height: 83vh;
+      margin: 10px;
+      background-color: white;
+      border: 1px solid black;
+      box-shadow: 2px 2px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 10px;
+      width: 100%;
+      
+  }
+  
+  .image-container{
+      color: black;
+      display: flex;
+      flex-direction: column;
+      height: 38vh;
+      margin: 10px;
+      
+      text-align: center;
+      width: 100%;
+      border: 2px solid rgb(244, 233, 233);
+      border-radius: 10px;
+     
+  }
+  .button-btn-images{
+      font-family: "roboto";
+      font-weight: bold;
+      background-color: #3498db;
+      color: green;
+      width: 120px;
+      height: 40px;
+      border-radius: 10px;
+  }
+  .image-heading{
+      font-family: "roboto";
+      font-weight: bold;
+      font-size: 15px;
+      color: green;
+  }
+  .card-image{
+      display: flex;
+      flex-direction: row;
+  }
+  .image-width{
+      height: 190px;
+      width: 90%;
+  }
+  .school-description h3,
+  .school-highlights h3 {
+      color: #3498db; /* Highlight color for headings */
+      margin-bottom: 10px; /* Margin below the heading */
+  }
+  
+  .school-description p {
+      color: #555; /* Dark gray for the text */
+      line-height: 1.6; /* Line height for readability */
+  }
+  
+  .school-highlights ul {
+      list-style-type: disc; /* Disc list style */
+      padding-left: 20px; /* Indentation */
+  }
+  
+  .school-highlights li {
+      color: #555; /* Dark gray for list items */
+      margin: 5px 0; /* Margin between list items */
+  }
+  
+  
+  /* Footer Section */
+  footer {
+    background-color: #0a0a0a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative; 
+    bottom: 0;
+    width: 100%;
+  }
+  
+  @media screen and (min-width:0px) and (max-width:767px){
+      .nav-links{
+          display:none;
+      }
+      .main-content{
+          padding:0px;
+      }
+      .home-card{
+          width:100%;
+          flex-grow:1;
+      }
+      .about-kenwin-card{
+          margin:10px;
+          overflow-y:auto;
+          text-align:left;
+          font-size:18px;
+          width:600px;
+      }
+      .about-school-card{
+          margin:10px;
+          overflow-y:auto;
+          text-align:left;
+          font-size:18px;
+          width:600px;
+      }
+      .students-year-card{
+          display:none;
+      }
+      .students-year7-card{
+          display:none;
+      }
+      .students-year1-card{
+          height:40vh;
+          width:35%;
+      }
+      .students-year2-card{
+          height:40vh;
+          width:35%;
+      }
+      .students-year3-card{
+          display:none;
+      }
+      .students-year4-card{
+          height:40vh;
+          width:35%;
+      }
+      .students-year5-card{
+          height:40vh;
+          width:35%;
+      }
+      .students-year6-card{
+          display:none;
+      }
+      .employe-card4{
+          display:none;
+      }
+      .employe-card8{
+          display:none;
+      }
+      .employe-card{
+          margin:5px;
+          width:140px;
+      }
+      .selection-container{
+          display:none;
+      }
+      .service-card-content{
+          height:70vh;
+          width:250px;
+      }
+      .selection-service-card{
+          height:90vh;
+      }
+      .service-card-image{
+          height:75vh;
+      }
+      .strong-container{
+          display:none;
+      }
+      .school-section{
+          padding:10px;
+      }
+      .employe-card3{
+        display:none;
+      }
+      .employe-card7{
+        display:none;
+      }
+      .school-content-card{
+        display:none;
+      }
+      
+  }
+  
